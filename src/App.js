@@ -13,9 +13,9 @@ function App() {
     console.log(width, height);
     var canvas = document.getElementById('canvas');
     canvas.width = width;
-    canvas.height = 10000;
+    canvas.height = 3800;
     var ctx = canvas.getContext('2d');
-    var imgData = ctx.getImageData(0, 0, width, height);
+    var imgData = ctx.getImageData(0, 0, canvas.width, height);
 
     function randomInt() {
       return Math.random()
@@ -61,7 +61,7 @@ function App() {
     console.log(ref.current.clientHeight);
     console.log(ref.current.clientHeight);
     draw(document.documentElement.scrollHeight, document.documentElement.clientWidth)
-  })
+  },[])
 
 
 
@@ -71,7 +71,7 @@ function App() {
     <div style={{ position: 'relative' }} ref={ref}>
       <canvas id="canvas" style={{ position: 'absolute' }} >
       </canvas>
-      <div style={{ zIndex: 1, position: 'absolute', width: '100%', height: '100%' }} >
+      <div style={{ zIndex: 1, position: 'absolute', width: '100%' ,  height:"100%" }} >
         <Landing />
       </div>
     </div>
