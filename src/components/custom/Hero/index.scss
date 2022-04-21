@@ -1,0 +1,151 @@
+.hero {}
+
+.hero_big_title {
+    margin-top: 80px;
+
+}
+
+.closen {
+    font: 'Aeonik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 130%;
+    /* or 83px */
+    
+    
+    color: #ECF9E8;
+    
+}
+
+.innovate {
+  color: #C8F4A6;
+  font-weight: bold;
+}
+
+.closen img {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 120.93px;
+}
+
+.hero_description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.hero_description span {
+    font-size: 14px;
+    color: #ECF9E8;
+}
+
+.hero_description button {
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #E3FFE6 0%, #E5E1D6 100%);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.clients {
+    margin-top: 70px;
+}
+
+.some {
+    font-family: Aeonik;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #636D5B;
+    text-decoration: underline;
+
+    text-underline-offset: 2px;
+}
+
+.la-apple {
+    font-size: 25px;
+    color: #636D5B;
+    margin-right: 13px;
+}
+
+.google {
+
+    font-size: 18px;
+    color: #636D5B;
+    margin-right: 13px;
+}
+
+.microsoft {
+    font-size: 18px;
+    color: #636D5B;
+    font-style: italic;
+    font-weight: bold;
+    margin-right: 13px;
+}
+
+.hero_bottom_border {
+    margin-top: 30px;
+    background: linear-gradient(90deg, #E3FFE6 0%, #E5E1D6 100%);
+    opacity: 0.3;
+    height: 1px;
+}
+
+.hero_image {
+    height: 450px;
+    margin-top: 50px;
+}
+
+.clients1 {
+    display: none;
+}
+
+.hero_bottom_border1 {
+    display: none;
+    background: linear-gradient(90deg, #E3FFE6 0%, #E5E1D6 100%);
+    opacity: 0.3;
+    height: 1px;
+}
+
+@media screen and(max-width : 600px) {
+    .hero_description {
+        display: none;
+    }
+
+    .clients {
+        display: none;
+    }
+
+    .clients1 {
+        display: contents;
+        display: flex;
+        margin-top: 15px;
+        flex-direction: column;
+    }
+
+    .hero_bottom_border {
+        display: none;
+    }
+
+    .hero_image {
+        margin-top: 30px;
+        height: 300px;
+        width: 100%;
+    }
+
+    .hero_big_title {
+        margin-top: 20px;
+    }
+
+    .closen {
+        font-size: 20px;
+    }
+
+    .hero_bottom_border1{
+        display: contents;
+      
+    }
+}

@@ -1,0 +1,38 @@
+.solutions {
+    margin-top: 50px;
+    padding: 0px 24px;
+}
+
+.soultions_title {
+    font-size: 40.1px;
+    font: Aeonik;
+    font-weight: 400, Regular;
+    color: #ECF9E8;
+}
+
+.solutions_items_wrapper {
+    position: relative;
+}
+
+.solution_image {
+    position: absolute;
+    top: -50px;
+    width: 259px;
+    height: 306px;
+    right: 100px;
+}
+
+@media screen and(max-width : 600px) {
+    .soultions_title {
+        font-size: 20px;
+    }
+
+    .solutions {
+        margin-top: 30px;
+        padding: 0px 10px;
+    }
+
+    .solution_image {
+        display: none;
+    }
+}

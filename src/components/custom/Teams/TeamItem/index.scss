@@ -1,0 +1,44 @@
+.team_item {
+    position: relative;
+}
+
+.team_item img {
+    height: 324px;
+    width: 100%;
+}
+
+.team_item span {
+    position: absolute;
+bottom: 10px;
+left: 10px;
+    font: 'Aeonik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #ECF9E8;
+}
+
+@media screen and(max-width : 600px) {
+    .team_item div {
+        position: unset;
+    }
+
+    .team_item span {
+        left: 10px;
+    }
+
+    .Administration,
+    .Design,
+    .All {
+    height: 150px;
+      
+    }
+
+    .team_item img {
+        height: 100%;
+        
+    }
+
+  
+}

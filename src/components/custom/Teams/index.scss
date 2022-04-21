@@ -1,0 +1,25 @@
+.teams_title {
+    padding: 0px 15px;
+    margin-top: 150px;
+}
+
+.teams_title span {
+    font: 'Aeonik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40.0952px;
+    line-height: 110%;
+    color: #ECF9E8;
+}
+
+@media screen and(max-width : 600px) {
+
+    .teams_title {
+        padding: 0px 15px;
+        margin-top: 50px;
+    }
+
+    .teams_title span {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,37 @@
+.innovation {
+    margin-top: 100px;
+}
+
+.innovation_image {
+    height: 400px;
+}
+
+.innovation_title {
+    font: 'Aeonik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40.0952px;
+    line-height: 110%;
+    color: #ECF9E8;
+}
+
+.innovation_items {
+    padding: 40px;
+}
+
+@media screen and(max-width : 600px) {
+    .innovation_image {
+        display: none;
+    }
+
+    .innovation {
+        margin-top: 25px;
+    }
+
+    .innovation_items {
+        padding: 0px 10px;
+    }
+    .innovation_title {
+        font-size: 25px;
+    }
+}

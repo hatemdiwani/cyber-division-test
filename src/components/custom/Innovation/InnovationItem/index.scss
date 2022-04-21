@@ -1,0 +1,42 @@
+.innovation_item {
+    border-left: 1px solid #E3FFE6;
+}
+
+.innovation_number {
+    background: linear-gradient(135deg, #E3FFE6 0%, #E5E1D6 100%);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.innovation_number span {
+    font: 'Aeonik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.innovation_content {
+    padding: 15px;
+}
+
+.innovation_content span {
+    font: 'Aeonik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 29px;
+
+
+    color: #ECF9E8;
+}
+
+.innovation_content p {
+    font: 'Aeonik';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #F9FFF8;
+}
