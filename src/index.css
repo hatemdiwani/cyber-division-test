@@ -1,5 +1,7 @@
 body {
    margin: 0;
+  /*  background : #142B16!important; */
+   
 }
 
 html {
@@ -14,3 +16,8 @@ html {
 ::-webkit-scrollbar-thumb {
    background: #FF0000;
 }
+
+
+ 
+
+ 

@@ -2,10 +2,33 @@ import { Col, Row } from 'antd'
 import Container from '../../ui/Container'
 import './index.scss'
 import victor from '../../../assets/img/Vector.png'
+import TextTransition, { presets } from "react-text-transition";
 import hero from '../../../assets/img/hero.png'
+import { useEffect, useState } from 'react';
+import Fade from 'react-reveal/Fade';
+import styled from 'styled-components';
 export default () => {
+
+    const [index, setIndex] = useState(0);
+    const TEXTS = [
+        "Innovate",
+        "Connect",
+        "Inspire"
+    ];
+
+    useEffect(() => {
+        const intervalId = setInterval(() =>
+            setIndex(index => index >= 2 ? 0 : index + 1),
+            3000 // every 3 seconds
+        );
+        return () => clearTimeout(intervalId);
+    }, []);
+
+
+
     return (
         <div className="hero">
+        
             <Container>
                 <Row>
                     <Col xs={24} sm={24} md={12} >
@@ -15,15 +38,17 @@ export default () => {
                                 <span>
 
                                     <div>
-                                        <span>   Closen the technology of the future to help you  <span className="innovate" style={{ position: 'relative' }} > innovate <img style={{ position: 'absolute', right: 0 }} src={victor} alt="" />  </span> </span>
+                                        <span>
+                                            Closen the technology of the future to help you
+                                            <div className='innovate'  >
+                                                <Fade up key={index} > {TEXTS[index]}</Fade> <img src={victor} alt="" />
+                                            </div>
+                                        </span>
 
                                     </div>
                                 </span>
 
-
                             </div>
-
-
 
                         </div>
 
@@ -74,7 +99,7 @@ export default () => {
 
                     </div>
                 </Row>
-            </Container>
+            </Container >
         </div >
     )
 }

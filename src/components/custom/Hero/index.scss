@@ -21,6 +21,8 @@
 .innovate {
   color: #C8F4A6;
   font-weight: bold;
+  margin-top: -38px;
+margin-left: 60px;
 }
 
 .closen img {
@@ -132,8 +134,8 @@
 
     .hero_image {
         margin-top: 30px;
-        height: 300px;
-        width: 100%;
+        height: 350px;
+        width: 90%;
     }
 
     .hero_big_title {
@@ -148,4 +150,17 @@
         display: contents;
       
     }
+}
+
+@media screen and(max-width : 390px) {
+    .innovate {
+        margin-top: -25px;
+        margin-left: 85px;
+    }
+}
+
+.wave1 {
+    background: white;
+    height: 100px;
+opacity: 5%;filter: brightness(2)
 }
