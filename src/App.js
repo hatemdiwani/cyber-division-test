@@ -6,7 +6,6 @@ function App() {
   return (
     <>
       <AppBackground>
-      
         <Landing />
       </AppBackground>
     </>

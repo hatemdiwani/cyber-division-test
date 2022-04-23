@@ -41,9 +41,7 @@ export default () => {
                         <div className="hero_big_title">
 
                             <div className='closen'>
-
-
-
+                              
 
                                 <div className=''  >
                                     Closen the technology of the future to help <span ref={ref} >you</span>
