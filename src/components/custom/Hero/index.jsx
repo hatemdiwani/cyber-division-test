@@ -2,11 +2,9 @@ import { Col, Row } from 'antd'
 import Container from '../../ui/Container'
 import './index.scss'
 import victor from '../../../assets/img/Vector.png'
-import TextTransition, { presets } from "react-text-transition";
 import hero from '../../../assets/img/hero.png'
 import { useEffect, useState, useRef } from 'react';
 import Fade from 'react-reveal/Fade';
-import styled from 'styled-components';
 export default () => {
 
     const [index, setIndex] = useState(0);
@@ -62,7 +60,7 @@ export default () => {
                                             objectFit: 'cover'
                                         }}
                                     >
-                                        <span style={{ position: 'absolute', marginTop: '-35px' }} >
+                                        <span className={TEXTS[index]} style={{ position: 'absolute', marginTop: '-35px' }} >
                                             <Fade up key={index} >
                                                 {TEXTS[index]}
                                             </Fade>
