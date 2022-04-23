@@ -4,7 +4,7 @@ import './index.scss'
 import victor from '../../../assets/img/Vector.png'
 import TextTransition, { presets } from "react-text-transition";
 import hero from '../../../assets/img/hero.png'
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
 export default () => {
@@ -16,37 +16,64 @@ export default () => {
         "Inspire"
     ];
 
+    const ref = useRef()
+
     useEffect(() => {
         const intervalId = setInterval(() =>
             setIndex(index => index >= 2 ? 0 : index + 1),
             3000 // every 3 seconds
         );
         return () => clearTimeout(intervalId);
+
     }, []);
+
+
+    useEffect(() => {
+        console.log(ref);
+    }, [ref])
 
 
 
     return (
         <div className="hero">
-        
+
             <Container>
                 <Row>
                     <Col xs={24} sm={24} md={12} >
                         <div className="hero_big_title">
 
                             <div className='closen'>
-                                <span>
 
-                                    <div>
-                                        <span>
-                                            Closen the technology of the future to help you
-                                            <div className='innovate'  >
-                                                <Fade up key={index} > {TEXTS[index]}</Fade> <img src={victor} alt="" />
-                                            </div>
+
+
+
+                                <div className=''  >
+                                    Closen the technology of the future to help <span ref={ref} >you</span>
+                                    <span
+                                        className='innovate_iamge'
+                                        style={{
+                                            backgroundImage: `url(${victor})`,
+                                            backgroundRepeat: 'no-repeat',
+                                            position: "absolute",
+                                            width: '130px',
+                                            height: '100%',
+                                            padding: "0px 10px",
+                                            marginTop: "35px",
+                                            objectFit: 'cover'
+                                        }}
+                                    >
+                                        <span style={{ position: 'absolute', marginTop: '-35px' }} >
+                                            <Fade up key={index} >
+                                                {TEXTS[index]}
+                                            </Fade>
+
                                         </span>
+                                    </span>
 
-                                    </div>
-                                </span>
+                                </div>
+
+
+
 
                             </div>
 

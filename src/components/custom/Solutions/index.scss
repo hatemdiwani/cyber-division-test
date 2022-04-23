@@ -16,10 +16,11 @@
 
 .solution_image {
     position: absolute;
-    top: -50px;
+    top: -100px;
     width: 259px;
     height: 306px;
-    right: 100px;
+    right: 10px;
+    z-index: 2;
 }
 
 @media screen and(max-width : 600px) {

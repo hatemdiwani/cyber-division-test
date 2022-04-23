@@ -1,12 +1,8 @@
 import { Col, Row } from 'antd'
 import Container from '../../ui/Container'
 import './index.scss'
-import { useState } from 'react'
-import image from '../../../assets/img/soluionimage.png'
 import SolutionItem from './SolutionItem'
 export default () => {
-
-    const [isShown, setIsShown] = useState(false);
 
 
 
@@ -35,17 +31,16 @@ export default () => {
 
             <div className="solutions_items_wrapper">
                 <div
-                    onMouseEnter={() => setIsShown(true)}
-                    onMouseLeave={() => setIsShown(false)}
+                   
                     className="items"
                 >
 
                     <Row style={{ marginTop: '20px' }} >
                         {
-                            solutions.map(solution => {
+                            solutions.map((solution , i ) => {
                                 return (
                                     <Col span={24} >
-                                        <SolutionItem solution={solution} />
+                                        <SolutionItem key={i} solution={solution} />
                                     </Col>
                                 )
                             })
@@ -53,9 +48,7 @@ export default () => {
                     </Row>
                 </div>
 
-                {
-                    isShown && <img className="solution_image" src={image} alt="" />
-                }
+               
 
 
 

@@ -6,7 +6,7 @@ export default ({ team }) => {
             <div>
 
                 <div className="team_item">
-                    <div className={team.title} >
+                    <div id='image_container' className={` ${team.title}`} >
                         <img className={team.title} src={team.image} alt="" />
                     </div>
                     <span> {team.title}  </span>

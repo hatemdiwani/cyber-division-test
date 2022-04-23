@@ -17,7 +17,7 @@ body {
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
-  background:  #142B16;
+  background:  #0e2210;
   background-position: center;
   background-size: cover;
 }
